@@ -1,4 +1,5 @@
 # Chatbot
+<b>Note:</b> The updates are only in the Chatbot_trans.py file. For all other files please refer to the original project.  https://github.com/shiro102/Chat-bot-team-20
 ## Link to Presentation
 https://drive.google.com/file/d/1_FKNQh3XlUMmmUHKq60klVV1JbeSDznw/view?usp=sharing
 ## Potential Topics
