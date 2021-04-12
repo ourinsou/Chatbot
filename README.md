@@ -1,5 +1,36 @@
 # Chatbot
 
+## Potential Topics
+- Action anime
+    - Adventure anime
+    - Drama anime
+    - Fantasy anime
+    - Comedy anime
+    - Favorite anime
+- Manga
+    - Top Manga
+    - Favorite manga
+    - Recent manga
+    - Recommend manga
+- About Manhwa
+-   Famous Manhwa
+- Otaku Culture
+- Anime Convention
+- Famous Conventions
+- Bucket List Conventions
+- About Jump Festa
+- Video Games
+    - Gacha
+    - Famous Gacha
+    - RPG
+    - Famous RPG
+- Japanese Culure
+    - Japanese People
+    - Japanese Religion
+    - Japanese Sport
+    - Japanese Food
+    - Samurai
+
 ## APIs
 In this assignment, I have incorporated two extra APIs: Flickr API and Google Translate API. 
 
