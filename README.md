@@ -37,6 +37,8 @@ A function named flickr_search(str) is defined in class GUI, and when calling it
             ChatLog.insert(END, "\n\n")
         return im 
 ```
+### Demo
+![image](https://user-images.githubusercontent.com/50982809/114362529-02e15700-9baa-11eb-8b81-5bdb625badaf.png)
 
 ### Google Translate API
 The Google Translate API could translate the reply of the bot into different languages. In this project, it is specified to Chinese. Basic steps for setting up the environment for Google Translate API is the same as Flickr API. First you need to apply for a key, then you need to download the key in a JSON file and store it. Then set up in python like this:
@@ -47,7 +49,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = path
 ```
 where the path references the path where the key is stored, then add it to the system environment. Also a function is defined in the website. It is incorporated with some minor modifications:
 ```
-def translate_text(target, text):
+def trans(target, text):
     """Translates text into the target language.
 
     Target must be an ISO 639-1 language code.
@@ -68,3 +70,16 @@ def translate_text(target, text):
     return result["translatedText"]
 ```
 When calling the method, the first parameter specifies the target language, which is Chinese here, denoted by "zh". Then the second parameter is the text you want to translate. And the function returns the text in Chinese in string.
+
+<b>Note:</b> This API is incorporated in a separated file named Chatbot_trans.py as opposed to the original file named Chatbot.py. It is basically the same as the original file but with the modifications incorporated.
+
+### Demo
+![image](https://user-images.githubusercontent.com/50982809/114363375-e72a8080-9baa-11eb-8459-027a0e2209d0.png)
+
+
+## Limitations
+There are several limitations of the API implemented. For the Flickr API, sometimes the images retrieved are not exactly related to the topic. This is mainly due to the search engine of Flickr and it tends to perform poorly on certain topics. And all this implementation in this project is just to retrieve the first image that comes up.
+
+Also for the Google Translate API, sometimes the translation looks very interesting and deviates from its original meanings. This might be due to the difficulties of translating some jargon or names in a certain field like in Japanese anime.
+
+After incorporating so many APIs (Wikipedia, Flickr, Google Translate, etc.), the response time for a reply tends to last very long and could be improved.
